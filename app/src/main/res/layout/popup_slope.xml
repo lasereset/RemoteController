@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/distance_15"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="9dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/distance_10"
+                android:text="SLOPE"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/stroke_1"
+                android:layout_marginStart="@dimen/distance_15"
+                android:layout_marginEnd="@dimen/distance_15"
+                android:background="@color/stroke"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/distance_30"
+                android:layout_marginStart="@dimen/distance_30"
+                android:layout_marginTop="@dimen/distance_15">
+                
+                <CheckBox
+                    android:id="@+id/xz_checkBox"
+                    android:layout_width="@dimen/distance_40"
+                    android:layout_height="@dimen/distance_40" />
+
+                <TextView
+                    android:id="@+id/x_z_reduce_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_alignParentStart="true"
+                    android:drawableBottom="@mipmap/left"
+                    android:gravity="center"
+                    android:text="-X/Z"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/x_z_add_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:drawableBottom="@mipmap/right"
+                    android:gravity="center"
+                    android:text="+X/Z"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/slope_view_x"
+                    android:layout_width="150dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="200dp"
+                    android:src="@mipmap/slope_xz"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/stroke_1"
+                android:layout_marginStart="@dimen/distance_15"
+                android:layout_marginEnd="@dimen/distance_15"
+                android:background="@color/stroke"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/distance_15"
+                android:layout_marginEnd="@dimen/distance_30"
+                android:layout_marginStart="@dimen/distance_30">
+
+                <CheckBox
+                    android:id="@+id/y_checkBox"
+                    android:layout_width="@dimen/distance_40"
+                    android:layout_height="@dimen/distance_40" />
+
+                <TextView
+                    android:id="@+id/y_reduce_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:drawableBottom="@mipmap/left"
+                    android:gravity="center"
+                    android:text="-Y"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="45dp"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/y_add_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:drawableBottom="@mipmap/right"
+                    android:layout_marginTop="45dp"
+                    android:gravity="center"
+                    android:text="+Y"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/slope_view_y"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:src="@mipmap/slope_y"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/exit_btn"
+                style="@style/ButtonLightBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/distance_50"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/distance_15"
+                android:text="退出" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

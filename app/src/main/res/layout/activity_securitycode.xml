@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <include layout="@layout/comom_toorbar"/>
+    
+    <TextView
+        android:id="@+id/show_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightBlack"
+        android:text="please input password"
+        android:gravity="center"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginTop="@dimen/distance_40"/>
+    
+    <TextView
+        android:id="@+id/show_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="@dimen/distance_5"
+        android:gravity="center"
+        android:textColor="@color/warn"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="@dimen/distance_20"
+        android:orientation="horizontal">
+        <com.dmrjkj.remotecontroller.weight.PswView
+            android:id="@+id/psw_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:isDrawBorderImg="true"
+            app:delayTime="500"
+            app:pswLength="4">
+        </com.dmrjkj.remotecontroller.weight.PswView>
+
+        <ImageView
+            android:id="@+id/show_hide_pwd"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/eye_open"
+            android:layout_marginEnd="@dimen/distance_15"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/top_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:src="@mipmap/ic_up"
+            android:background="@drawable/selector_white_tdl"
+            android:padding="25dp"/>
+        <ImageView
+            android:id="@+id/left_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_left"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_white_tdl"
+            android:padding="25dp"/>
+        <ImageView
+            android:id="@+id/del_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/del"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_white_tdlr"
+            android:padding="25dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+        <ImageView
+            android:id="@+id/down_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:src="@mipmap/ic_down"
+            android:background="@drawable/selector_white_dl"
+            android:padding="25dp"/>
+        <ImageView
+            android:id="@+id/right_view"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_right"
+            android:background="@drawable/selector_white_dl"
+            android:padding="25dp"/>
+        <TextView
+            android:id="@+id/ok_view"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="match_parent"
+            android:src="@mipmap/del"
+            android:text="OK"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray_15"
+            android:gravity="center"
+            android:background="@drawable/selector_white_dlr"
+            android:padding="25dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forget security code?"
+        android:textColor="#f00"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"/>
+</LinearLayout>

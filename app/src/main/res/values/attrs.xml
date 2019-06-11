@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EasySwipeMenuLayout">
+        <attr name="leftMenuView" format="reference" />
+        <attr name="rightMenuView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="canRightSwipe" format="boolean" />
+        <attr name="canLeftSwipe" format="boolean" />
+        <attr name="fraction" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="RadarView">
+        <!--圆圈和交叉线的颜色-->
+        <attr name="circleColor" format="color" />
+        <!--圆圈的数量-->
+        <attr name="circleNum" format="integer" />
+        <!--扫描的颜色 RadarView会对这个颜色做渐变透明处理-->
+        <attr name="sweepColor" format="color" />
+        <!--水滴的颜色-->
+        <attr name="raindropColor" format="color" />
+        <!--水滴的数量 这里表示的是水滴最多能同时出现的数量。因为水滴是随机产生的，数量是不确定的-->
+        <attr name="raindropNum" format="integer" />
+        <!--是否显示交叉线-->
+        <attr name="showCross" format="boolean" />
+        <!--是否显示水滴-->
+        <attr name="showRaindrop" format="boolean" />
+        <!--扫描的转速，表示几秒转一圈-->
+        <attr name="speed" format="float" />
+        <!--水滴显示和消失的速度-->
+        <attr name="flicker" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleSeekbar2">
+        <attr name="circleColor1" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="background" format="reference" />
+        <attr name="textSize" format="dimension" />
+        <attr name="progress" format="integer" />
+        <attr name="maxProgress" format="integer" />
+        <attr name="progressWidth" format="dimension" />
+        <attr name="circleWidth" format="dimension" />
+        <attr name="thumb" format="reference" />
+        <attr name="enabled" format="boolean" />
+        <attr name="touchInside" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ScannerView">
+        <attr name="scanner_background" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SlopeView">
+        <attr name="slope_background" format="reference" />
+    </declare-styleable>
+
+    <!--密码输入框-->
+    <declare-styleable name="PswView">
+        <!--密码长度-->
+        <attr name="pswLength" format="integer"/>
+        <!--密码框颜色-->
+        <attr name="borderColor" format="color"/>
+        <!--密码颜色-->
+        <attr name="pswColor" format="color"/>
+        <!--输入时密码框颜色-->
+        <attr name="inputBorder_color" format="color"/>
+        <!--输入时密码框阴影颜色-->
+        <attr name="borderShadow_color" format="color"/>
+        <!--明文密码文字大小-->
+        <attr name="psw_textSize" format="dimension"/>
+        <!--密码框圆角程度-->
+        <attr name="borderRadius" format="dimension"/>
+        <!--是否使用图片绘制密码框-->
+        <attr name="isDrawBorderImg" format="boolean"/>
+        <!--按back键时，是否需要绘制明文密码-->
+        <attr name="isShowTextPsw" format="boolean"/>
+        <!--输入密码时密码框是否有阴影-->
+        <attr name="isShowBorderShadow" format="boolean"/>
+        <!--密码框图片-->
+        <attr name="borderImg" format="reference"/>
+        <!--输入时变化的密码框图片-->
+        <attr name="inputBorderImg" format="reference"/>
+        <!--延迟绘制密码圆点的时间,1000 = 1s-->
+        <attr name="delayTime" format="integer"/>
+        <!--是否只绘制明文密码-->
+        <attr name="clearTextPsw" format="boolean"/>
+        <!--是否只绘制圆点-->
+        <attr name="darkPsw" format="boolean"/>
+        <!--是否在输入密码时不更改密码框颜色-->
+        <attr name="isChangeBorder" format="boolean"/>
+    </declare-styleable>
+</resources>

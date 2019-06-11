@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/distance_15"
+            android:layout_marginRight="@dimen/distance_15"
+            android:clickable="true"
+            android:src="@mipmap/back"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/iv_back"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_15"
+                android:layout_marginRight="@dimen/distance_15"
+                android:gravity="start"
+                android:text="标题"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_middle" />
+
+            <TextView
+                android:id="@+id/toolbar_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_15"
+                android:layout_marginRight="@dimen/distance_15"
+                android:gravity="start"
+                android:text="标题"
+                android:visibility="gone"
+                android:textColor="@color/link"
+                android:textSize="11sp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/search_iv_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/distance_10"
+            android:layout_marginEnd="@dimen/distance_15"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_search_normal"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>
+

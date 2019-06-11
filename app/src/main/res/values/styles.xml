@@ -1,0 +1,217 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TranslucentStyle" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <style name="MusicStyle" parent="AppTheme">
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="roll_up_down_anim_style" parent="android:Animation.Translucent">
+        <!-- 进入时的动画 -->
+        <item name="@android:windowEnterAnimation">@anim/roll_up</item>
+        <!-- 退出时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/roll_down</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- EditText styles -->
+    <style name="BaseEdittextStyle">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textCursorDrawable">@null</item>
+
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/lightRed</item>
+
+        <item name="android:paddingStart">@dimen/distance_5</item>
+        <item name="android:paddingEnd">@dimen/distance_5</item>
+    </style>
+
+    <style name="EdittextWhite" parent="BaseEdittextStyle">
+        <item name="android:background">@drawable/shape_common_white_corner</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:cacheColorHint">@color/hintText</item>
+        <item name="android:textColorHint">@color/hintText</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginStart">@dimen/distance_15</item>
+        <item name="android:layout_marginEnd">@dimen/distance_15</item>
+        <item name="android:layout_marginTop">@dimen/distance_7d5</item>
+        <item name="android:layout_marginBottom">@dimen/distance_7d5</item>
+
+        <item name="android:layout_height">@dimen/distance_40</item>
+    </style>
+
+    <style name="ButtonLightBlue">
+        <item name="android:background">@drawable/shapeblue_4</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Buttons styles -->
+    <style name="BaseButtonStyle">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_marginBottom">7dp</item>
+    </style>
+
+
+    <style name="ButtonRed" parent="BaseButtonStyle">
+        <item name="android:background">@drawable/shapeorange_4</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ButtonWhite" parent="BaseButtonStyle">
+        <item name="android:background">@drawable/button_white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextShow">
+        <item name="android:textSize">@dimen/textSize_min</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">@dimen/distance_10</item>
+    </style>
+
+    <style name="TextShowS">
+        <item name="android:textSize">@dimen/textSize_smin</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextShowX">
+        <item name="android:textSize">@dimen/textSize_smin</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/distance_15</item>
+        <item name="android:layout_marginEnd">@dimen/distance_15</item>
+        <item name="android:layout_marginTop">@dimen/distance_5</item>
+        <item name="android:layout_marginBottom">@dimen/distance_5</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+
+    <!-- RadioGroup styles -->
+    <style name="RadioGroup">
+        <item name="android:padding">@dimen/stroke_d5</item>
+        <item name="android:background">@drawable/shapewhite_main_4</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">39dp</item>
+        <item name="android:orientation">horizontal</item>
+
+        <item name="android:layout_marginLeft">@dimen/distance_15</item>
+        <item name="android:layout_marginRight">@dimen/distance_15</item>
+        <item name="android:layout_marginTop">@dimen/distance_7d5</item>
+        <item name="android:layout_marginBottom">@dimen/distance_7d5</item>
+    </style>
+
+    <style name="RadioGroupBlueBorder">
+        <item name="android:padding">@dimen/stroke_d5</item>
+        <item name="android:background">@drawable/shapeblue_4</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">39dp</item>
+        <item name="android:orientation">horizontal</item>
+
+        <item name="android:layout_marginLeft">@dimen/distance_15</item>
+        <item name="android:layout_marginRight">@dimen/distance_15</item>
+        <item name="android:layout_marginTop">@dimen/distance_7d5</item>
+        <item name="android:layout_marginBottom">@dimen/distance_7d5</item>
+    </style>
+
+    <!-- RadioButton styles -->
+    <style name="RadioButtonLeft">
+        <item name="android:background">@drawable/item_radiobutton_left</item>
+        <item name="android:textColor">@color/radiobutton_text</item>
+        <item name="android:textSize">@dimen/textSize_middle</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="RadioButtonCenter">
+        <item name="android:background">@drawable/item_radiobutton_center</item>
+        <item name="android:textColor">@color/radiobutton_text</item>
+        <item name="android:textSize">@dimen/textSize_middle</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="RadioButtonRight">
+        <item name="android:background">@drawable/item_radiobutton_right</item>
+        <item name="android:textColor">@color/radiobutton_text</item>
+        <item name="android:textSize">@dimen/textSize_middle</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="toolBar">
+        <item name="colorControlNormal">#ffffff</item>
+        <item name="android:homeAsUpIndicator">@mipmap/cha</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomSeekbarStyle">
+        <item name="android:maxHeight">10dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@color/colorAccent</item>
+        <item name="android:progressDrawable">@drawable/seekbar_progress_drawable</item>
+        <item name="android:minHeight">8dp</item>
+    </style>
+
+    <!-- 自定义控件风格-->
+    <style name="Custom" />
+
+    <style name="Custom.TabRadioButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/textSize_ssmin</item>
+        <item name="android:textColor">@color/tab_text_color_selector</item>
+    </style>
+
+    <style name="NB.Theme" parent="AppTheme"/>
+    <style name="NB.Theme.TextAppearance"/>
+    <style name="NB.Theme.TextAppearance.Read"></style>
+    <style name="NB.Theme.TextAppearance.Read.TopMenu">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">50dp</item>
+        <item name="android:textColor">@color/nb.read.menu.text</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="NB.Theme.TextAppearance.Read.BottomMenu">
+        <item name="android:textColor">@color/nb.read.menu.text</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/shapewhite_black_4"
+    android:layout_margin="@dimen/distance_10"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_40"
+        android:text="请选择倾斜角度"
+        android:gravity="center"
+        android:textColor="@color/warn"
+        android:textSize="@dimen/sp_16"/>
+
+    <TextView
+        android:id="@+id/x_angle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="X/Z: 0°"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/distance_15"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold" />
+    <com.warkiz.widget.IndicatorSeekBar
+        android:id="@+id/xz_indicator_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isb_max="90"
+        app:isb_min="-90"
+        app:isb_progress="0"
+        app:isb_show_indicator="circular_bubble"
+        app:isb_show_tick_texts="true"
+        app:isb_tick_texts_color="@color/colorAccent"
+        app:isb_tick_texts_typeface="serif"
+        app:isb_ticks_count="2" />
+
+    <TextView
+        android:id="@+id/y_angle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Y: 0°"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/distance_15"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold" />
+
+    <com.warkiz.widget.IndicatorSeekBar
+        android:id="@+id/y_indicator_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isb_max="90"
+        app:isb_min="-90"
+        app:isb_progress="0"
+        app:isb_show_indicator="circular_bubble"
+        app:isb_show_tick_texts="true"
+        app:isb_tick_texts_color="@color/colorAccent"
+        app:isb_tick_texts_typeface="serif"
+        app:isb_ticks_count="2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_50"
+        android:layout_marginTop="@dimen/distance_15"
+        android:orientation="horizontal"
+        android:gravity="center|right">
+        <Button
+            android:id="@+id/cancle_btn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="取消"/>
+
+        <Button
+            android:id="@+id/confirm_btn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="确定"
+            android:backgroundTint="@color/main"/>
+    </LinearLayout>
+</LinearLayout>

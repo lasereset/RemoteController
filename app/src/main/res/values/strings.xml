@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">LEVELFIX</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="devices_list">设备列表</string>
+    <string name="search_device">连接设备</string>
+
+    <string name="remote_controller">Telecontrol operation</string>
+    <string name="device_produce">Product Manual</string>
+    <string name="service_request">Service request</string>
+    <string name="after_sale_service">After Sale-service</string>
+    <string name="clear_bind">DELETE</string>
+    <string name="setting">SETTING</string>
+
+    <string name="my_device">My Device</string>
+    <string name="begin_search">Searching Device</string>
+
+    <string name="search_device_loading">Searching for devices</string>
+    <string name="search_device_loading_tips">Please ensure that the  tool is turned on and can be reached</string>
+
+    <string name="search_none_device">没有搜索到设备</string>
+    <string name="search_some_device">搜索到设备</string>
+
+    <string name="saopingyi">扫平仪</string>
+    <string name="touxianyi">投线仪</string>
+    <string name="zhinengfujian">智能附件</string>
+    <string name="cejuyi">测距仪</string>
+    <string name="jieshouqi">接收器</string>
+    <string name="celianglun">测量轮</string>
+    <string name="rexiangchengyi">热像成仪</string>
+    <string name="leida">雷达</string>
+</resources>

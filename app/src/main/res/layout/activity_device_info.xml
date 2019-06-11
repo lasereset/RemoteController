@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/comom_toorbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/device_img" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/device_operation"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:drawableEnd="@drawable/ic_next"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/distance_15"
+                    android:text="@string/remote_controller"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/stroke_d25"
+                    android:background="@color/stroke" />
+
+                <TextView
+                    android:id="@+id/device_produce"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:drawableEnd="@drawable/ic_next"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/distance_15"
+                    android:text="@string/device_produce"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/stroke_d25"
+                    android:background="@color/stroke" />
+
+                <TextView
+                    android:id="@+id/service_request"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:drawableEnd="@drawable/ic_next"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/distance_15"
+                    android:text="@string/service_request"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/stroke_d25"
+                    android:background="@color/stroke" />
+
+                <TextView
+                    android:id="@+id/after_sale_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:drawableEnd="@drawable/ic_next"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/distance_15"
+                    android:text="@string/after_sale_service"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/stroke_d25"
+                    android:background="@color/stroke" />
+
+                <TextView
+                    android:id="@+id/setting_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/distance_30"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/setting"
+                    android:textAllCaps="false"
+                    android:textColor="@color/link"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/clear_bind"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/distance_10"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/clear_bind"
+                    android:textAllCaps="false"
+                    android:textColor="@color/warn"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
